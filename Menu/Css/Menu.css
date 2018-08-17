@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Content {
+  opacity: 1;
+  background: url("../Images/WHDQ-512536146.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background-attachment:  fixed;
+}
+
+/* DEMO-SPECIFIC STYLES */
+
+.contact-head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-head h1 {
+  width: 100%;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #c59d5f;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  /* margin: -85px 0 0 0px; */
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  font-size: 47px;
+  font-family: oswald;
+  /* letter-spacing: 0.4em; */
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+      width: 0
+  }
+  to {
+      width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+  from, to {
+      border-color: transparent
+  }
+  50% {
+      border-color: #c59d5f
+  }
+}
+
+.contact-content h2 {
+  color: #c59d5f;
+  font-family: 'Herr Von Muellerhoff';
+  font-weight: normal;
+  font-family: "Herr Von Muellerhoff";
+  font-size: 8.22em;
+  font-weight: normal;
+  height: 107px;
+}
+.contact-content {
+  padding-top: 150px;
+  text-align: center;
+  color: white;
+}
+
+p.cont-p {
+  font-size: 18px;
+  font-family: cabin;
+  text-align:  center;
+  color:  white;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+  margin-bottom: 1%;
+  color: #c59d5f;
+}
+
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+
+.fancy span:before, .fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 214px;
+}
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+#content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0%;
+  margin-bottom: 7%;
+}
+
+.left-content {
+  /* display: flex; */
+  width: 48%;
+  padding-top: 0%;
+  padding-left: 5%;
+  /* text-align: center; */
+}
+
+.right-content {
+  width: 48%;
+  padding-right: 5%;
+  padding-top: 0%;
+  width: 48%;
+}
+
+.menu-list hr {
+  margin: 5px 0;
+}
+
+.menu-list__items, .rsBullets {
+  list-style: none;
+  margin-left: 0;
+}
+
+.menu-list span.dots {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0;
+  border: 0;
+  height: 3px;
+  display: block;
+  background-image: radial-gradient(circle closest-side, #b3b3b3 99%, transparent 1%);
+  background-position: bottom;
+  background-size: 6px 3px;
+  background-repeat: repeat-x;
+}
+
+h2.menu-list__title {
+  margin-top: 42px;
+  margin-bottom: 30px;
+  font-family: 'Oswald';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-size-adjust: 100%;
+  letter-spacing: 0.1em;
+}
+
+.menu-list__title {
+  text-align: left;
+}
+
+.menu-list__item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.menu-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.menu-list__item-title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 96px;
+  text-align: left;
+  letter-spacing: 0.1em;
+}
+
+.menu-list__item-title .item_title {
+  position: relative;
+  z-index: 5;
+  background-color: white;
+  font-family: Source Sans Pro;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 500;
+  color: #262526;
+}
+
+p.menu-list__item-desc {
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 16px;
+  font-family: cabin;
+  /* text-transform: capitalize; */
+}
+
+p.menu-list__item-desc+span.dots {
+  display: none;
+}
+
+.desc__content {
+  position: relative;
+  z-index: 5;
+  background-color: white;
+}
+
+.menu-list__item-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 96px;
+  background-color: white;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.27316;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: cabin;
+  color: #515150;
+}
+
+.menu-list__item-highlight-title {
+  position: absolute;
+  top: -34px;
+  left: -18px;
+  padding: 0 18px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+  color: white;
+  background-color: #c59d5f;
+}
+
+.menu-list__item-highlight-wrapper {
+  margin-top: 54px;
+  margin-bottom: 38px;
+}
+
+.menu-list__item-highlight-wrapper:before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  right: -18px;
+  bottom: -18px;
+  border: 2px solid #c59d5f;
+}
+.lunch-content {
+  opacity: 1;
+  background: url(../Images/parallax-8.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  background-attachment:  fixed;
+  z-index: -1;
+  margin-bottom: 4%;
+}
+.Dinner-content {
+  opacity: 1;
+  background: url(../Images/parallax-9.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  background-attachment:  fixed;
+  z-index: -1;
+  margin-bottom: 4%;
+}
+.Drinks-content {
+  opacity: 1;
+  background: url(../Images/4425620-soft-drinks-hd-wallpapers.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  background-attachment:  fixed;
+  z-index: -1;
+  margin-bottom: 4%;
+}
+.container{
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 450px;
+  left: 0;
+  position: absolute;
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+}
+.container h1{
+  margin-top: 200px;
+  letter-spacing: .15em;
+  font-size: 47px;
+  font-family: oswald;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  #content {
+    flex-direction: column;
+  }
+  .left-content {
+    padding-right: 5%;
+    width: 100%;
+  }
+  .right-content {
+    width: 100%;
+    padding-right: 5%;
+    width: 100%;
+    padding-left: 5%;
+    margin-top: 12%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .Content {
+    height: 293px;
+    background-attachment:scroll;
+}
+
+.contact-content h1 {
+    font-size: 29px;
+    text-align:  center;
+    /* margin-left: 18px; */
+}
+.contact-content h2 {
+    font-size: 90px;
+    height: 73px;
+}
+
+.contact-content {
+    padding: 0;
+    padding-top: 90px;
+    text-align:  center;
+    width: 255px;
+}
+  .lunch-content{
+    background-attachment:scroll;
+  }
+  .container h1 {
+    padding-top: 147px;
+    font-size: 29px;
+}
+  .Dinner-content{
+    background-attachment: scroll;
+  }
+  #content {
+    flex-direction: column;
+  }
+  .menu-list__item-highlight-wrapper:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #c59d5f;
+  }
+  .menu-list__item-highlight-title {
+    position: absolute;
+    top: -26px;
+    left: -10px;
+  }
+  .left-content {
+    padding-right: 5%;
+    width: 100%;
+  }
+  .right-content {
+    width: 100%;
+    padding-right: 5%;
+    width: 100%;
+    padding-left: 5%;
+    margin-top: 12%;
+  }
+  .fancy span:before, .fancy span:after {
+       
+    width: 120px;
+}
+}

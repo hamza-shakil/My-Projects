@@ -1,0 +1,213 @@
+@import url("main.css");
+@import url("util.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.Content {
+    opacity: 1;
+    background: url("../Images/bg-001.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    background-attachment: fixed;
+}
+
+/* DEMO-SPECIFIC STYLES */
+
+.contact-head {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-head h1 {
+    width: 100%;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #c59d5f;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    /* margin: -85px 0 0 0px; */
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.3em;
+    font-size: 47px;
+    font-family: oswald;
+    /* letter-spacing: 0.4em; */
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #c59d5f
+    }
+}
+
+.contact-content h2 {
+    color: #c59d5f;
+    font-family: 'Herr Von Muellerhoff';
+    font-weight: normal;
+    font-family: "Herr Von Muellerhoff";
+    font-size: 8.22em;
+    font-weight: normal;
+    height: 107px;
+}
+
+.contact-content {
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+}
+
+p.cont-p {
+    font-size: 18px;
+    font-family: cabin;
+    text-align: center;
+    color: white;
+}
+
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+    margin-bottom: 1%;
+    color: #c59d5f;
+}
+
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+
+.fancy span:before, .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    top: 0;
+    width: 214px;
+}
+
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+div#map, div#maptwo {
+    width: 646px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+div#maps {
+    display: flex;
+    margin-top: 1%;
+    flex-direction: row;
+}
+
+.left, .right {
+    width: 50%;
+    margin-left: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+    .Content {
+        background-attachment: fixed;
+    }
+    .content h1 {
+        font-size: 60px;
+    }
+    .contact-content {
+        padding: 21%;
+    }
+    div#maps {
+        flex-direction: column;
+    }
+    div#map, div#maptwo {
+        width: 755px;
+    }
+    .left, .right, maps {
+        margin-bottom: 1%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .Content {
+        height: 293px;
+        background-attachment: scroll;
+    }
+    .contact-content h1 {
+        font-size: 29px;
+        /* width: 164px; */
+        text-align: center;
+        /* margin-left: 18px; */
+        /* height: 45px; */
+    }
+    .contact-content h2 {
+        font-size: 90px;
+        height: 68px;
+    }
+    .contact-content {
+        padding: 0;
+        padding-top: 90px;
+        width: 100%;
+        /* display:  flex; */
+        text-align: center;
+        width: 194px;
+    }
+    .contact-head {
+        display: flex;
+        justify-content: center;
+        width: 164px;
+        text-align: center;
+    }
+    div#map, div#maptwo {
+        width: 198%;
+    }
+    div#maps {
+        margin-top: 5%;
+        flex-direction: column;
+    }
+    .fancy span:before, .fancy span:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        top: 0;
+        width: 124px;
+    }
+}

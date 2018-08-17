@@ -1,0 +1,62 @@
+
+@font-face {
+  font-family: Raleway;
+  src: url('../fonts/Raleway/Raleway-Bold.ttf'); 
+}
+@font-face {
+    font-family: Cabin;
+    src: url('../fonts/Cabin/Cabin-Medium.ttf'); 
+  }
+  @font-face {
+    font-family: Source Sans Pro;
+    src: url('../fonts/SourceSansPro-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Oswald;
+    src: url('../fonts/Oswald/Oswald-Bold.ttf'); 
+  }
+  @font-face {
+    font-family: Amatic SC;
+    src: url('../fonts/Amatic_SC/AmaticSC-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Satisfy;
+    src: url('../fonts/Satisfy/Satisfy-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Open Sans;
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Herr Von Muellerhoff;
+    src: url('../fonts/Herr_Von_Muellerhoff/HerrVonMuellerhoff-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Herr+Von+Muellerhoff;
+    src: url('../fonts/Herr_Von_Muellerhoff/HerrVonMuellerhoff-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Dancing+Script;
+    src: url('../fonts/Dancing_Script/DancingScript-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: dancing script;
+    src: url('../fonts/Dancing_Script/DancingScript-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Cabin;
+    src: url('../fonts/Cabin/Cabin-Medium.ttf'); 
+  }
+  
+
+   @font-face {
+    font-family: Tangerine;
+    src: url('../fonts/Tangerine-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Playball;
+    src: url('../fonts/Playball/Playball-Regular.ttf'); 
+  }

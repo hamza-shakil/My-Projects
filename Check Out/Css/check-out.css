@@ -1,0 +1,33 @@
+@import url("main.css");
+@import url("util.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+h1.checkout {
+    font-family: "Oswald",Arial,sans-serif;
+    font-style: normal;
+    color: #222222;
+    margin-bottom: 0;
+    margin-top: 140px;
+    font-size: 33px;
+    text-transform: uppercase;
+    margin-left: 8%;
+    font-weight: normal;
+    /* height: 22px; */
+}
+p.p {
+    margin-left: 7%;
+    margin-top: 2%;
+    background-color: #f5f5f5;
+    padding: 14px;
+    font-size: 16px;
+    font-family: cabin;
+}
+.p a{
+    font-size: 20px;
+    color:#c59d5f;
+    margin-left: 9px;
+    font-family: cabin;
+}

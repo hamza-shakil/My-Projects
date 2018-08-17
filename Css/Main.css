@@ -1,0 +1,522 @@
+@font-face {
+    font-family: Cabin;
+    src: url('../fonts/Cabin/Cabin-Medium.ttf'); 
+  }
+  @font-face {
+    font-family: Source Sans Pro;
+    src: url('../fonts/SourceSansPro-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Oswald;
+    src: url('../fonts/Oswald/Oswald-Bold.ttf'); 
+  }
+  @font-face {
+    font-family: Amatic SC;
+    src: url('../fonts/Amatic_SC/AmaticSC-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Satisfy;
+    src: url('../fonts/Satisfy/Satisfy-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Open Sans;
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Herr Von Muellerhoff;
+    src: url('../fonts/Herr_Von_Muellerhoff/HerrVonMuellerhoff-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Herr+Von+Muellerhoff;
+    src: url('../fonts/Herr_Von_Muellerhoff/HerrVonMuellerhoff-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Dancing+Script;
+    src: url('../fonts/Dancing_Script/DancingScript-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Cabin;
+    src: url('../fonts/Cabin/Cabin-Medium.ttf'); 
+  }
+  /* @font-face {
+    font-family: Source Sans Pro;
+    src: url('../fonts/SourceSansPro-Regular'); 
+  } */
+  @font-face {
+    font-family: Playball;
+    src: url('../fonts/Playball/Playball-Regular.ttf'); 
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+#showcase {
+    min-height: 635px;
+    background: url("../imgs/vid.mp4") no-repeat 0 -400px;
+	text-align: center;
+	color: #e8491d;
+    background-size: cover;
+    transition: 1s opacity;
+    z-index: -100;
+}
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+    margin-bottom: 2%;
+    color: #c59d5f;
+    /* margin-top: -50px; */
+}
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+
+.fancy span:before, .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    top: 0;
+    width: 214px;
+}
+
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+#Explore_bttn {
+    border-style: none;
+    padding: 12px;
+    /* background-color: white; */
+    border: 2px solid white;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 2%;
+    transition: 0.3s;
+    display: inline-block;
+}
+  .pic-wrapper {
+	position: absolute;
+	width: 100%;
+	min-height: 635px;
+	overflow: hidden;
+	}
+  
+  figure {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	/*animation*/
+	
+	animation: slideShow 24s linear infinite 0s;
+	-o-animation: slideShow 24s linear infinite 0s;
+	-moz-animation: slideShow 24s linear infinite 0s;
+	-webkit-animation: slideShow 24s linear infinite 0s;
+  }
+  
+ figurecaption {
+    position: absolute;
+    top: 22%;
+    left: 13%;
+    color: #c59d5f;
+    text-align: center;
+    width: 70%;
+    /* background: rgba(255,255,255,0.4); */
+    padding-bottom: 4%;
+    padding-top: 4%;
+
+}
+  
+  .pic-1 {
+	opacity: 1;
+	background: url(../Images/cutlery-dinner-forks-114974-1-1170x468.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+  
+  .pic-2 {
+	animation-delay: 6s;
+	-o-animation-delay: 6s;
+	-moz--animation-delay: 6s;
+	-webkit-animation-delay: 6s;
+	background: url(../Images/brb1.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+  
+  .pic-3 {
+	animation-delay: 12s;
+	-o-animation-delay: 12s;
+	-moz--animation-delay: 12s;
+	-webkit-animation-delay: 12s;
+	background: url(../Images/Food-4.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+  
+  .pic-4 {
+	animation-delay: 18s;
+	-o-animation-delay: 18s;
+	-moz--animation-delay: 18s;
+	-webkit-animation-delay: 18s;
+	background: url(..//Images/wp1874156.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+
+
+/* keyframes*/
+
+@keyframes slideShow {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        -ms-transform: scale(1);
+    }
+    5% {
+        opacity: 1
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        transform: scale(1.1);
+        -ms-transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+        -ms-transformm: scale(1);
+    }
+}
+
+@-o-keyframes slideShow {
+    0% {
+        opacity: 0;
+        -o-transform: scale(1);
+    }
+    5% {
+        opacity: 1
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        -o-transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        -o-transformm: scale(1);
+    }
+}
+
+@-moz-keyframes slideShow {
+    0% {
+        opacity: 0;
+        -moz-transform: scale(1);
+    }
+    5% {
+        opacity: 1
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        -moz-transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        -moz-transformm: scale(1);
+    }
+}
+
+@-webkit-keyframes slideShow {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+    }
+    5% {
+        opacity: 1
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        -webkit-transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transformm: scale(1);
+    }
+}
+
+.ul h1 {
+    font-size: 126px;
+    padding-bottom: 2%;
+    font-family: "Herr Von Muellerhoff";
+    font-size: 8.22em;
+    font-weight: normal;
+    height: 145px;
+}
+
+.ul q {
+    font-size: 32px;
+    color: white;
+    width: 100%;
+    text-transform: capitalize;
+    height: 45px;
+    font-family: Playball;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.left-content {
+    /* display: flex; */
+    width: 50%;
+    padding-top: 2%;
+    /* padding-left: 2%; */
+    text-align: center;
+}
+
+.left-content h2, .Recepies-content h2, .Blend-content h2 {
+    /* padding-bottom: 1%; */
+    font-family: "Herr Von Muellerhoff";
+    font-size: 8.2em;
+    font-weight: normal;
+    color: #c59d5f;
+}
+
+.left-content h1, .Recepies-content h1, .Blend-content h1 {
+    padding-bottom: 6%;
+    font-family: Source Sans Pro;
+    font-weight: 900;
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: 1.03128;
+    margin-top: -63px;
+    margin-right: 0.9em;
+    letter-spacing: 17px;
+}
+
+.left-content p {
+    margin: 0;
+    width: 73%;
+    margin-bottom: 24px;
+    color: #515150;
+    font-size: 14px;
+    font-family: Cabin;
+    font-family: 'Open Sans';
+    text-align: -webkit-center;
+    margin-left: 15%;
+}
+
+.right-content {
+    width: 50%;
+    /* margin-top: 130px; */
+}
+
+.right-content img {
+    width: 292px;
+    margin-left: 13px;
+    margin-right: 5px;
+    /* height: 1160px; */
+}
+
+img[width], img[height] {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+a.abou-page {
+    padding: 3px 0;
+    background: transparent !important;
+    border: 0;
+    border-bottom: 2px solid #c59d5f;
+    border-radius: 0;
+    font-size: 15px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #c59d5f;
+    font-family: cabin;
+    margin-bottom: 24px;
+}
+
+#Recepies, #Blend {
+    margin-top: 10%;
+}
+
+.Recepies-content, .Blend-content {
+    text-align: center;
+    background: url(../Images/three-col-1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    background-position: center;
+    background-size: 100%;
+    padding-top: 100px;
+}
+
+.Blend-content {
+    background: url(../Images/frontpage-menu.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    background-position: center;
+    background-size: 100%;
+    padding-top: 113px;
+    /* margin-left: 12px; */
+    /* margin-right: 12px; */
+}
+
+.Recepies-content h1, .Blend-content h1 {
+    color: white;
+}
+@media only screen and (max-width: 1024px){
+    .right-content img {
+        width: 23vw;
+        margin-left: 1px;
+    }
+    .right-content {
+        margin-top: 100px;
+        margin-right: 0%;
+        margin-left: 2%;
+    }
+    .left-content h1, .Recepies-content h1, .Blend-content h1 {
+        font-size: 36px;
+        letter-spacing: 11px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .ul q {
+        font-size: 28px;
+    }
+    .left-content h2, .Recepies-content h2, .Blend-content h2 {
+        font-size: 6.2em;
+    }
+    .left-content h1, .Recepies-content h1, .Blend-content h1 {
+        font-size: 35px;
+        letter-spacing: 11px;
+    }
+    .left-content p {
+        width: 70%;
+        /* margin-left: 0; */
+        font-size: 13px;
+    }
+    .right-content img {
+        width: 49%;
+        /* margin: 0; */
+        /* margin-left: 1px; */
+        margin-right: 0px;
+    }
+    .right-content {
+        margin-top: 6%;
+        margin-right: 3%;
+    }
+    .Recepies-content, .Blend-content {
+        height: 297px;
+        background-size: cover;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .left-content p {
+        width: 73%;
+        /* margin-left: 0; */
+        font-size: 14px;
+    }
+    .fancy span:before, .fancy span:after {
+        width: 82px;
+    }
+    .pic-wrapper {
+        min-height: 342px;
+    }
+    figurecaption {
+        left: 11%;
+        width: 81%;
+        top: 75px;
+    }
+    .pic-1, .pic-2, .pic-3, .pic-4 {
+        width: 100%;
+        height: 333px;
+    }
+    #showcase {
+        min-height: 342px;
+    }
+    .ul h1 {
+        font-size: 74px;
+        height: 81px;
+    }
+    .ul q {
+        font-size: 20px;
+    }
+    #Explore_bttn {
+        font-size: 12px;
+        margin-top: 3%;
+    }
+    #content {
+        flex-direction: column;
+        text-align:  center;
+        margin-top: 0;
+    }
+    .left-content, .right-content {
+        width: 100%;
+        margin-top: 7%;
+        margin-left: 0;
+    }
+    .left-content h2, .Recepies-content h2, .Blend-content h2 {
+        font-size: 6.1em;
+    }
+    .left-content h1, .Recepies-content h1, .Blend-content h1 {
+        font-size: 35px;
+        margin-top: -46px;
+        letter-spacing: 7px;
+        text-size-adjust: 100%;
+    }
+    .right-content img {
+        width: 43%;
+        margin-left: 0;
+        margin-right: 0px;
+    }
+    .Recepies-content, .Blend-content {
+        padding: 0;
+        padding-top: 90px;
+        margin:  0;
+        background-attachment: scroll;
+    }
+}
